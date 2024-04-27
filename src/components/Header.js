@@ -7,6 +7,8 @@ import { userLogoutAction } from '../actions/userLoginAction';
 import { useNavigate } from 'react-router-dom';
 
 import { useEffect, useState } from 'react';
+import logo from'../ima/My Farm wbg.png';
+import './Header.css';
 
 
 function Header() {
@@ -38,11 +40,11 @@ function Header() {
       className="text-xl"
     > 
       <Navbar className="container">
-            <NavLink to="/">
-              <span className="text-cyan-700 self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-              Shop <span className='text-orange-500'>Shop</span>
-              </span>
-            </NavLink>
+      <NavLink to="/" exact activeClassName="active">
+      <Link>
+           <img src={logo} alt="Logo" className="logo" />
+    </Link>
+      </NavLink>
             <div className="flex md:order-3 text-cyan-700">
               <p className='mt-1 mr-3'>
               <i className="fa-solid fa-cart-shopping mr-1 text-cyan-700"></i>

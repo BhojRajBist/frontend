@@ -432,6 +432,8 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="layer-panel">
         <FarmerProduct />
+     
+
       </div>
       <div id="map-panel" className="map-panel" onClick={handleMapClick}>
         <MapContainer

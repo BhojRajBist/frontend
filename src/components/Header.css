@@ -1,12 +1,66 @@
-.logo-container {
-    display: flex;
-    align-items: center;
-    flex: 1; /* Take up remaining space */
-  }
+
   .logo {
     width: 80%; /* Full width */
     max-width: 100px; /* Set maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     cursor: pointer;
+   
   }
     
+
+
+ 
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0 1rem;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-divider {
+    border-top: 1px solid #e9ecef;
+  }

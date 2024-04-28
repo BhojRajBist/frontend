@@ -161,6 +161,16 @@ function Header() {
               Home
             </p>
           </NavLink>
+          <NavLink to="/product" className="mr-5">
+            <p className="text-base font-medium text-gray-900 hover:text-gray-300">
+              Products
+            </p>
+          </NavLink>
+          <NavLink to="/productdet" className="mr-5">
+            <p className="text-base font-medium text-gray-900 hover:text-gray-300">
+              Products
+            </p>
+          </NavLink>
           {!userInfo && (
             <>
               <NavLink to="/register" className="mr-5">

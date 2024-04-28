@@ -33,7 +33,7 @@ const Hero= () => {
   return (
     <div className="carousel-container">
       {slides.map((slide, index) => (
-        <div
+        <div 
           key={index}
           className={`slide ${index === currentSlide ? 'active' : ''}`}
           style={{ backgroundImage: `url(${slide.image})` }}

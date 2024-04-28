@@ -14,6 +14,10 @@ import ProfileChangePassword from "./pages/ProfileChangePassword";
 import Shipping from "./pages/Shipping";
 import Checkout from "./pages/Checkout";
 
+
+
+import Dashboard  from "./pages/Dashboard";
+
 function App() {
   return (
     <Router>
@@ -21,6 +25,7 @@ function App() {
       <div className="container main p-5">
         <Routes>
           <Route path="/" Component={Home} exact />
+          <Route path="/dashboard" Component={Dashboard} />
           <Route path="/product/:slug" Component={ProductDetails}/>
           <Route path="/cart/:slug?" Component={Cart}/>
           <Route path="/shipping" Component={Shipping}/>

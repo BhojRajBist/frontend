@@ -158,7 +158,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className='card-manual-section'>
+      {/* <section className='card-manual-section'>
         <h2>{language === 'english' ? 'Manuals' : 'म्यानुअलहरू'}</h2>
         <div className="card-manual-div">
           {manuals.map((manual, index) => (
@@ -170,7 +170,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
       <section className="etod-info">
         <div className="container">
           <div className='description'>

@@ -29,7 +29,7 @@ function Shipping() {
             'address': address,
             'city': city,
             'country': country,
-            'postalCode': postalCode,
+            'Phone Number': postalCode,
             'payment': paymentMethod
         }))
 
@@ -93,10 +93,10 @@ function Shipping() {
                         
                         <div>
                             <div className="mb-2 block text-left ">
-                            <label  className="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Postal Code</label>
+                            <label  className="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
                             <TextInput
                             type="text"
-                            placeholder="Postal Code"
+                            placeholder="Phone Number"
                             value={postalCode ? postalCode : ''}
                             required
                             onChange={(e) => setPostalCode(e.target.value)}
@@ -118,7 +118,7 @@ function Shipping() {
                                     onChange={(e)=>setPaymentMethod(e.target.value) }
                                     />
                                     <Label>
-                                    Paypal or Crdit Card
+                                    Esewa 
                                     </Label>
                                 </div>
                                 <div className="flex items-center gap-2">
@@ -128,7 +128,7 @@ function Shipping() {
                                     onChange={(e)=>setPaymentMethod(e.target.value) }
                                     />
                                     <Label>
-                                    Google Pay
+                                    CashOnDelivery
                                     </Label>
                                 </div>
                                 
@@ -184,7 +184,7 @@ function Shipping() {
                                 </td>
                             
                                 <td className="px-6 py-4 text-black">
-                                    ${(product.price * product.qty).toFixed(2)}
+                                    Rs{(product.price * product.qty).toFixed(2)}
                                 </td>
                             
                             </tr>
@@ -195,7 +195,7 @@ function Shipping() {
                             </th>
                             <td></td>
                             <td className="px-6 py-4 text-gray-700">
-                                ${cartItems.reduce((acc, item)=> acc + item.price * item.qty, 0).toFixed(2)}
+                                Rs{cartItems.reduce((acc, item)=> acc + item.price * item.qty, 0).toFixed(2)}
                             </td>
                         </tr>
                         

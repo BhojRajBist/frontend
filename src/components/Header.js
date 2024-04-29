@@ -166,7 +166,7 @@ function Header() {
               Products
             </p>
           </NavLink>
-          <NavLink to="/productdet" className="mr-5">
+          <NavLink to="/dashboard" className="mr-5">
             <p className="text-base font-medium text-gray-900 hover:text-gray-300">
               Products
             </p>

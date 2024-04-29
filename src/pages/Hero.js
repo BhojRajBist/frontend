@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './hero.css'; // Import your CSS file for styling
-import img1 from '../images/cauli.jpg'
+import img1 from '../images/cauli.jpg';
+import img2 from '../images/tomato.jpg';
+import img3 from '../images/apples.jpg'
 
 const Hero= () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,11 +13,11 @@ const Hero= () => {
       text: 'Fresh Picks for a Healthy Life!',
     },
     {
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcabbage&psig=AOvVaw1P-urjx3mC1cgE-uLpKWRq&ust=1712376194796000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjvtMiYqoUDFQAAAAAdAAAAABAE',
+      image: img3,
       text: 'Crunch into Goodness: Our Gardens Finest ',
     },
     {
-      image: 'https://th.bing.com/th/id/R.d62e679b83345244004371e9e6bc8d30?rik=z41gsl5t1eo9EQ&pid=ImgRaw&r=0',
+      image: img2,
       text: 'Harvest Happiness with Every Bite',
     },
   ];

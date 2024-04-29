@@ -25,7 +25,7 @@ function TableRow(props) {
                 <Link className='text-cyan-800 underline' to={`/product/${product.slug}`}>{product.name}</Link>
             </th>
             <td className="px-6 py-4 text-black">
-                ${product.price}
+                Rs{product.price}
             </td>
             <td className="px-6 py-4">
                         <Select
@@ -44,7 +44,7 @@ function TableRow(props) {
                       </Select>
             </td>
             <td className="px-6 py-4 text-black">
-                ${(product.price * product.qty).toFixed(2)}
+                Rs{(product.price * product.qty).toFixed(2)}
             </td>
             <td className="px-6 py-4">
             <Button color="light" onClick={()=>removeProductFromCart(product.slug)}>

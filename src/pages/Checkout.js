@@ -23,7 +23,7 @@ function Checkout() {
 
     const totalItemsPrice = cartItems.reduce((acc, item)=> acc + (item.price * item.qty), 0).toFixed(2)
     const shippingPrice = (totalItemsPrice > 100 ? 0 : 10)
-    const tax = Number((0.082)*totalItemsPrice).toFixed(2)
+    const tax = Number((0.13 )*totalItemsPrice).toFixed(2)
     const totalPrice = (Number(totalItemsPrice) + Number(shippingPrice) + Number(tax)).toFixed(2)
 
     useEffect(()=>{
@@ -105,7 +105,7 @@ function Checkout() {
                                         </td>
                                     
                                         <td className="px-6 py-4 text-black">
-                                            ${(product.price * product.qty).toFixed(2)}
+                                            Rs {(product.price * product.qty).toFixed(2)}
                                         </td>
                                     </tr>
                                 ))}
@@ -127,7 +127,7 @@ function Checkout() {
                             Items
                         </th>
                         <th scope="row" className="px-6 py-4 text-gray-900">
-                            ${totalItemsPrice}
+                            Rs{totalItemsPrice}
                         </th>
                     </tr>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-lg " >
@@ -135,7 +135,7 @@ function Checkout() {
                             Shipping
                         </th>
                         <th scope="row" className="px-6 py-4 text-gray-900">
-                            ${shippingPrice}
+                            Rs{shippingPrice}
                         </th>
                     </tr>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-lg " >
@@ -143,7 +143,7 @@ function Checkout() {
                             Tax
                         </th>
                         <th scope="row" className="px-6 py-4 text-gray-900">
-                            ${tax}
+                            Rs{tax}
                         </th>
                     </tr>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-lg " >
@@ -151,7 +151,7 @@ function Checkout() {
                             Total
                         </th>
                         <th scope="row" className="px-6 py-4 text-gray-900">
-                            ${totalPrice}
+                            Rs{totalPrice}
                         </th>
                     </tr>
                     

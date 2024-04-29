@@ -98,7 +98,7 @@ function Cart() {
                           Total Price
                       </th>
                       <td className="px-6 py-4 text-gray-700">
-                          ${cartItems.reduce((acc, item)=> acc + item.price * item.qty, 0).toFixed(2)}
+                          Rs {cartItems.reduce((acc, item)=> acc + item.price * item.qty, 0).toFixed(2)}
                       </td>
                   </tr>
                   

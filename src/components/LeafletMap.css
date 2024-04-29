@@ -1,0 +1,24 @@
+/* leaflet-map.css */
+
+.leaflet-map-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .leaflet-map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .leaflet-map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1000; /* Ensure overlay is above map */
+    cursor: pointer; /* Show pointer cursor on overlay */
+  }
+  

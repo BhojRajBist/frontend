@@ -18,7 +18,8 @@ import Checkout from "./pages/Checkout";
 
 import Dashboard  from "./pages/Dashboard";
 import Product from './pages/Product';
-import ProductDetail from './pages/ProductDetail'
+
+import ProductForm from "./pages/ProductForm";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" Component={Home} exact />
           <Route path="/product" Component={Product}/>
-          <Route path="/productdet" Component={ProductDetail} />
+          <Route path="/dashboard" Component={ProductForm} />
           <Route path="/product/:slug" Component={ProductDetails}/>
           <Route path="/cart/:slug?" Component={Cart}/>
           <Route path="/shipping" Component={Shipping}/>
